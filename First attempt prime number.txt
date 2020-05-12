@@ -1,0 +1,9 @@
+num=int(input("Please give a number: "))
+factors= []
+for i in range(2,num+1):
+    if num%i==0:
+        factors.append(i)
+
+print ("{} is composite number and factors are -> {}".format(num,factors))
+print ("With 1st method number of iteration is -> ",int(num-1))
+print ("With 2st method number of iteration is -> ",int(i/num+2))
